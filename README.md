@@ -1,4 +1,5 @@
+
+### https://reduxtextgenerator.netlify.app/
+![Ekran görüntüsü 2024-06-27 135154](https://github.com/Eda-Inal/text-generator-app/assets/119332810/34b9316f-d7c6-46f6-abb8-0061f1f7bac9)
 ### Patika Redux modülünün birinci projesi olan Text Generator App'te, Redux Toolkit kullanarak geliştirdiğim bu React uygulamasında, asyncThunk kullanarak https://baconipsum.com/ sitesinden kullanıcı tarafından belirlenen sayıda paragraf çekilmektedir. Kullanıcı arayüzünde bir HTML dropdown'u ekledim ve "evet" seçeneği seçildiğinde p etiketleri görüntülenmektedir. Ayrıca, bileşenlerin durumlarını yönetmek için useState ve useEffect hook'larını kullanılmaktadır.
 ### In this React application I developed using Redux Toolkit, I fetch the number of paragraphs specified by the user from https://baconipsum.com/ using asyncThunk. I added an HTML dropdown in the user interface, and when the "yes" option is selected, p tags are displayed. Additionally, useState and useEffect hooks are used to manage the state of the components.
-#### https://reduxtextgenerator.netlify.app/
-![Ekran görüntüsü 2024-06-27 135154](https://github.com/Eda-Inal/text-generator-app/assets/119332810/34b9316f-d7c6-46f6-abb8-0061f1f7bac9)
