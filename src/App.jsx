@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchData } from './redux/paraSlice';
@@ -9,10 +9,9 @@ import Footer from './components/Footer';
 function App() {
   const [numParagraphs, setNumParagraphs] = useState(4);
   const prevNumParagraphsRef = useRef(0);
-  //  const [selectedValue, setSelectedValue] = useState('no');
-  //  const [yes, setYes] = useState(false);
+
   const dispatch = useDispatch();
-  const { loading, data, error, selectedValue, isYes } = useSelector((state) => state.paras);
+  const { data, error, selectedValue, isYes } = useSelector((state) => state.paras);
 
   console.log(selectedValue, isYes);
   useEffect(() => {
@@ -22,12 +21,7 @@ function App() {
     }
   }, [numParagraphs, dispatch]);
   console.log(data);
-  //  const handleSelectValue = (e) => {
-  // setSelectedValue(e.target.value)
-  // yes ? setYes(false) : setYes(true)
-
-  //  }
-  //  console.log(yes);
+ 
   const handleSelectChange = (e) => {
     dispatch(handleSelectedValue(e.target.value));
   };
