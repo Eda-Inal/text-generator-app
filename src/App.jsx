@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchData } from './redux/paraSlice';
 import { useEffect, useState, useRef } from 'react';
 import { handleSelectedValue } from './redux/paraSlice';
+import Footer from './components/Footer';
 
 function App() {
   const [numParagraphs, setNumParagraphs] = useState(4);
@@ -75,7 +76,7 @@ function App() {
       </div>
 
 
-
+<Footer/>
     </div>
   );
 }
