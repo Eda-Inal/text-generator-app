@@ -1,45 +1,155 @@
-body{
+body {
   text-align: center;
- background-color: black;
- 
- 
-  
+  background-color: black;
+
+
+
 
 }
-h1{
+
+h1 {
   border-bottom: palevioletred solid 0.5px;
   font-size: 40px
-
-  
 }
-.App{
+
+
+.App {
   margin-top: 2rem;
   margin-right: 9rem;
   margin-left: 9rem;
-  color:whitesmoke
+  color: whitesmoke;
+
 }
-.box{
-  
+
+@media (max-width: 1500px) {
+  .App {
+    margin-right: 6rem;
+    margin-left: 6rem;
+  }
+
+  .App .box .b1 {
+    margin-right: 5rem;
+  }
+
+
+}
+
+@media (max-width: 1200px) {
+  .App {
+    margin-right: 6rem;
+    margin-left: 6rem;
+  }
+
+  .App .box .b1 {
+    margin-right: 2rem;
+  }
+
+
+}
+
+@media (max-width: 992px) {
+  .App {
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+
+  .App .box .b1 {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .App {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .App .box .b1 {
+    margin-right: 1rem;
+    margin-left: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .App {
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+  }
+
+  .App .box .b1 {
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .App .box .b2 {
+
+    margin-right: 0.5rem;
+  }
+
+  .App h1 {
+    font-size: 25px;
+  }
+
+  .App p {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .App {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+
+  }
+
+  .App .box .b1 {
+
+    margin-left: 0.3rem;
+  }
+
+  .App .box .b2 {
+
+    margin-right: 0.3rem;
+  }
+
+  .App h1 {
+    font-size: 25px;
+  }
+
+  .App p {
+    font-size: 12px;
+  }
+
+}
+
+.box {
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 80px;
- 
+
+
 
 
 }
-input{
-height: 35px;
+
+input {
+  height: 35px;
   width: 160px;
-  
+
   border-radius: 5px;
   font-size: 15px;
   text-align: center;
   font-weight: 600;
- 
+
 }
-.dropdown{
+
+.dropdown {
   height: 35px;
   width: 160px;
   border-radius: 5px;
@@ -47,20 +157,27 @@ height: 35px;
   text-align: center;
   font-weight: 600;
 }
-.b1{
+
+.b1 {
+
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 2.3rem;
+  margin-left: 1rem;
+
+}
+
+.b2 {
 
   font-size: 16px;
   font-weight: 500;
 }
-.b2{
-  
-  font-size: 16px;
-  font-weight: 500;
-}
-.p{
+
+.p {
   border: 1px solid palevioletred;
   margin-top: 2rem;
   color: whitesmoke;
   border-radius: 10px;
   background-color: #2a2a2a;
+
 }
