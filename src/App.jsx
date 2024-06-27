@@ -8,6 +8,7 @@ function App() {
  const [numParagraphs, setNumParagraphs] = useState(4);
  const prevNumParagraphsRef = useRef(0);
  const [selectedValue, setSelectedValue] = useState('no');
+ const [yes, setYes] = useState(false);
  const dispatch = useDispatch();
  const { loading, data, error } = useSelector((state) => state.paras);
  useEffect(() => {
@@ -19,7 +20,10 @@ function App() {
  console.log(data);
  const handleSelectValue = (e) => {
 setSelectedValue(e.target.value)
+yes ? setYes(false) : setYes(true)
+
  }
+ console.log(yes);
  
  
 
@@ -41,32 +45,29 @@ onChange={(e)=> setNumParagraphs(e.target.value)}
     <div >
       <select className='dropdown' value={selectedValue} onChange={handleSelectValue}>
       <option value="yes" >Yes</option>
-      <option value="no" >No</option>
+      <option value="no"  >No</option>
       </select>
     </div>
   </div>
 </div>
 
 
+  {error && <p>Error: {error}</p>}
 
+<div className='p'>
+  {data.map((paragraph, index) => {
+    const isEven = index % 2 === 0;
+   
+    return isEven && yes ? (
+      <p key={index}>
+        &lt;p&gt;{paragraph}&lt;/p&gt;
+      </p>
+    ) : (
+      <p key={index}>{paragraph}</p>
+    );
+  })}
+</div>
 
-{loading && <p>Loading...</p>}
-            {error && <p>Error: {error}</p>}
-{/*            
-            { data.map((paragraph, index) => (
-                    <p key={index}>
-                       {paragraph}
-                      
-                      </p>
-                ))} */}
-                <div className='p'>
-                  { data.map((paragraph, index) => (
-                    <p  key={index}>
-                       {paragraph}
-                      
-                      </p>
-                ))}
-                </div>
             
 
     </div>
