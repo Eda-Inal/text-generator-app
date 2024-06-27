@@ -7,7 +7,7 @@ body{
 
 }
 h1{
-  border-bottom: rgb(238, 223, 223) solid 0.5px;
+  border-bottom: palevioletred solid 0.5px;
   font-size: 40px
 
   
@@ -58,9 +58,9 @@ height: 35px;
   font-weight: 500;
 }
 .p{
-  border: 2px solid rgb(235, 235, 235);
+  border: 1px solid palevioletred;
   margin-top: 2rem;
   color: whitesmoke;
   border-radius: 10px;
-  background-color: #484848;
+  background-color: #2a2a2a;
 }

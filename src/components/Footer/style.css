@@ -1,0 +1,17 @@
+.footer{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  
+}
+.icons a{
+    color: palevioletred;
+}
+.icons a:hover{
+    color: rgb(209, 150, 170);
+}
